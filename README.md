@@ -1,2 +1,2 @@
-# Exercicios-Apresenta-es
+# Exercicios-Apresentacoes
 Repositório criado para os exercícios das apresentações.
