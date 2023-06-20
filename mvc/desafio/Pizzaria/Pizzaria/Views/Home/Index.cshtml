@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzaria Delícia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css"> <!-- Arquivo CSS personalizado -->
+    <style>
+        body {
+            background-color: #FFE6B3; /* Altere a cor de fundo para um tom mais vivo de amarelo */
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #FF4500; /* Altere a cor de fundo para um tom mais vivo de vermelho */
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #banner {
+            background-image: url("~/img/banner.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            padding: 200px 20px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #FF4500; /* Altere a cor do botão para um tom mais vivo de vermelho */
+            border: none;
+        }
+
+        #cardapio {
+            background-color: #FFF;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #promocoes {
+            background-color: #FFFFCC; /* Altere a cor de fundo para um tom mais vivo de amarelo claro */
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #FF4500; /* Altere a cor de fundo para um tom mais vivo de vermelho */
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="banner">
+        <div class="container">
+            <h2>Bem-vindo à Pizzaria 103!</h2>
+            <h3>A melhor da região da Mooca</h3>
+            <a asp-controller="Home" asp-action="Cardapio" class="btn btn-primary">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <section id="cardapio">
+        <div class="container text-center">
+            <!-- Adicione a classe text-center para centralizar o conteúdo -->
+            <h2>Cardápio</h2>
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="~/img/pizza1.jpg" class="card-img-top" alt="Pizza Margherita">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza Margherita</h3>
+                            <p class="card-text">Tomate, queijo mozzarella, manjericão e azeite.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="Pizza Calabresa">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza Calabresa</h3>
+                            <p class="card-text">Calabresa, cebola, queijo mozzarella e molho de tomate.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais colunas para outras pizzas -->
+            </div>
+        </div>
+    </section>
+
+    <section id="promocoes">
+        <div class="container">
+            <!-- Adicione a classe text-center para centralizar o conteúdo -->
+            <h2>Promoções</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <img src="~/img/promo2.jpg" class="card-img-top" alt="Promoção 2">
+                        <div class="card-body">
+                            <h3 class="card-title">Leve 2 pizzas e ganhe 1 refrigerante</h3>
+                            <p class="card-text">Válido somente para pedidos acima de R$ 50,00.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais colunas para outras promoções -->
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
